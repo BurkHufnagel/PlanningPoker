@@ -1,0 +1,21 @@
+<ion-view cache-view="false" view-title="Planning">
+  <ion-content class="padding">
+  <!--script>
+      var index = $stateParam.selectedDeck;
+      if (index == undefined || index == null) {
+        index = 0;
+      }
+  </script-->
+  <div class="list">
+    <ion-radio ng-repeat="card in decks[index].cards" align='center'>
+      <h1>{{card.name}}</h1><p>({{card.description}})</p>
+    </ion-radio>
+    <!--div class="list card" ng-repeat="card in deck.cards">
+      <div class="item item-divider">{{card.name}}</div>
+      <div class="item item-body">
+        <div>((card.description))</div>
+      </div>
+    </div -->
+  </div>
+  </ion-content>
+</ion-view>

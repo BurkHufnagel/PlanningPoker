@@ -1,0 +1,8 @@
+<ion-view view-title="Configure">
+  <ion-content>
+    <div class="item item-divider">Select a deck to use:</div>
+    <ion-radio  ng-repeat="deck in decks" ng-model='Decks' ngChange='Decks.setSelected({{deck.id}})' value='{{deck.id}}'>
+      <h2>{{deck.id}}-{{deck.name}}:</h2><p>{{deck.description}}</p>
+    </ion-radio>
+  </ion-content>
+</ion-view>
